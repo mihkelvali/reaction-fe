@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MyForm } from './components/MyForm';
 import { OpenComponent } from './components/OpenComponent';
 
@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div className="App">
       { !teamName ? 
-        <MyForm setTeamName={ setTeamName } /> :
+        <MyForm setTeamName={setTeamName} /> :
         <OpenComponent teamName={teamName} />
       }
     </div>
